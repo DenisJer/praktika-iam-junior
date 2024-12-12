@@ -9,12 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-
-
+    <script defer src="js/script.js"></script>
 </head>
 
 <body class="page-index">
-
     <header class="top-header">
         <a href="#">
             <img src="img/logo.svg" alt="Future project logo">
@@ -28,7 +26,7 @@
             <li><a href="#">Team</a></li>
         </ul>
 
-        <a class="top-header__contact-btn" href="#">Contact Us</a>
+        <a id="contact-us-btn" class="top-header__contact-btn" href="#">Contact Us</a>
 
         <svg class="burger-btn" width="50" height="50" viewBox="0 0 56 56" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +52,8 @@
                             master new
                             technologies.
                         </p>
-                        <a href="#" class="btn-primary"> Read more </a>
+                        <a id="read-more-btn" href="#" class="btn-primary">
+                            Read more </a>
                     </div>
                 </div>
                 <picture>
@@ -120,8 +119,20 @@
                     </div>
                 </div>
             </section>
+
+
+            <form id="forma">
+                <input required type="text" id="tekstinis-laukas">
+                <button type="submit">Pateikti forma</button>
+            </form>
+
+            <p id="tekstinio-lauko-reiksme">
+
+            </p>
         </div>
     </main>
+
+
 
 
 </body>
