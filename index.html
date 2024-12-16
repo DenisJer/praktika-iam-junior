@@ -61,68 +61,62 @@
                 </picture>
             </section>
 
-            <section class="section-card">
-                <div class="card">
-                    <picture class="icon">
-                        <img src="img/tool-icon.svg" alt="bed icon image">
-                    </picture>
+            <section id="section-card" class="section-card">
 
-                    <div class="card__content">
-                        <h2>
-                            Construction
-                        </h2>
-                        <p>
-                            Designing and Building The Most Beautiful Custom Homes.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <picture class="icon">
-                        <img src="img/worker-icon.svg" alt="bed icon image">
-                    </picture>
-
-                    <div class="card__content">
-                        <h2>
-                            Project Development
-                        </h2>
-                        <p>
-                            Designing and Building The Most Beautiful Custom Homes.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <picture class="icon">
-                        <img src="img/bed-icon.svg" alt="bed icon image">
-                    </picture>
-
-                    <div class="card__content">
-                        <h2>
-                            Interior Design
-                        </h2>
-                        <p>
-                            Designing and Building The Most Beautiful Custom Homes.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <picture class="icon">
-                        <img src="img/building-icon.svg" alt="bed icon image">
-                    </picture>
-
-                    <div class="card__content">
-                        <h2>
-                            Architecture
-                        </h2>
-                        <p>
-                            Designing and Building The Most Beautiful Custom Homes.
-                        </p>
-                    </div>
-                </div>
             </section>
 
 
             <form id="forma">
-                <input required type="text" id="tekstinis-laukas">
+                <!-- {
+                    paveiksliukoKelias: 'img/tool-icon.svg',
+                    paveiksliukoAltTekstas: 'Irankio paveiksliukas',
+                    antrastesTekstas: 'Construction',
+                    paragrafoTekstas: 'Designing and Building The Most Beautiful Custom Homes.',
+                    mygtukoTekstas: 'Skaityti daugiau',
+                    mygtukoNuoroda: 'https://google.com',
+                    mygtukoTarget: '_blank'
+                }, -->
+
+                <div>
+                    <label>
+                        Paveiksliuko kelias
+                        <select name="paveiksliukoKelias" id="paveiksliukoKelias">
+                            <option value="img/tool-icon.svg">Irankis</option>
+                            <option value="img/bed-icon.svg">Lova</option>
+                            <option value="img/building-icon.svg">Namas</option>
+                            <option value="img/worker-icon.svg">Darbininkas</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Antrastes tekstas
+                        <input required type="text" name="antrastesTekstas" id="antrastesTekstas">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Paragrafo tekstas
+                        <input required type="text" name="paragrafoTekstas" id="paragrafoTekstas">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Mygtuko tekstas
+                        <input required type="text" name="mygtukoTekstas" id="mygtukoTekstas">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Mygtuko nuoroda
+                        <input required type="text" name="mygtukoNuoroda" id="mygtukoNuoroda">
+                    </label>
+                </div>
+
+                <!-- <input required type="text" id="tekstinis-laukas"> -->
                 <button type="submit">Pateikti forma</button>
             </form>
 
